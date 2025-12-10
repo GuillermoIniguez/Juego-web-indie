@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#gameArea {
+    margin-top: 50px;
+}
+
+.target {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.target:hover {
+    background-color: blue;
+}
