@@ -6,6 +6,8 @@ body {
 
 #gameArea {
     margin-top: 50px;
+    position: relative;
+    height: 100vh;  /* Esto asegura que el área de juego ocupe toda la pantalla */
 }
 
 .target {
@@ -14,9 +16,19 @@ body {
     background-color: red;
     margin: 20px auto;
     cursor: pointer;
-    transition: all 0.2s ease;
+    position: absolute; /* Cambiar de 'static' a 'absolute' para moverlo */
+    transition: all 0.3s ease;
 }
 
 .target:hover {
     background-color: blue;
+    transform: scale(1.1); /* Hace el cuadro un poco más grande cuando se pasa el mouse */
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
 }
