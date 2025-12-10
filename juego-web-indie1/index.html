@@ -10,9 +10,18 @@
     <div id="gameArea">
         <h1>¡Haz clic en el cuadro!</h1>
         <div id="target" class="target"></div>
-        <p>Haz clic en el cuadro para ganar puntos.</p>
         <p>Puntos: <span id="score">0</span></p>
+        <p>Vidas: <span id="lives">3</span></p>
+        <p>Tiempo restante: <span id="timer">30</span> segundos</p>
     </div>
+
+    <!-- Pantalla de Fin de Juego -->
+    <div id="gameOver" style="display: none;">
+        <h1>¡Juego Terminado!</h1>
+        <p id="finalScore">Tu puntaje final es: 0</p>
+        <button onclick="location.reload()">Reiniciar</button>
+    </div>
+
     <script src="game.js"></script>
 </body>
 </html>

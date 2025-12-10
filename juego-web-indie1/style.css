@@ -16,13 +16,13 @@ body {
     background-color: red;
     margin: 20px auto;
     cursor: pointer;
-    position: absolute; /* Cambiar de 'static' a 'absolute' para moverlo */
+    position: absolute;
     transition: all 0.3s ease;
 }
 
 .target:hover {
     background-color: blue;
-    transform: scale(1.1); /* Hace el cuadro un poco más grande cuando se pasa el mouse */
+    transform: scale(1.1);
 }
 
 h1 {
@@ -31,4 +31,35 @@ h1 {
 
 p {
     font-size: 1.2em;
+}
+
+/* Estilo para la pantalla de fin de juego */
+#gameOver {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#lives {
+    color: red;
+    font-weight: bold;
 }
